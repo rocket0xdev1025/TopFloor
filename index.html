@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Top Floor President | $DJT</title>
+  <meta name="description" content="The Top Floor President Trump brings presidential swagger, skyscraper energy, and pure Solana meme chaos. Buy $DJT on Solana." />
+  <meta property="og:title" content="The Top Floor President | $DJT" />
+  <meta property="og:description" content="Presidential swagger, skyscraper energy, and pure Solana meme chaos." />
+  <meta property="og:image" content="banner.png" />
+  <meta name="theme-color" content="#0B1D4A" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: "#0B1D4A", deep: "#06122E", mid: "#132A63", soft: "#1E3A7A" },
+            flag: { red: "#BF0A30", blue: "#002868", white: "#F8F6F1" },
+            gold: { DEFAULT: "#C9A227", light: "#E8D48B", pale: "#F4E7B5", dark: "#8B6914" },
+            sky: { deep: "#164A86", DEFAULT: "#3A8FD4", mid: "#5BAEE8", light: "#8FCDF4", pale: "#D4EEFB" }
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "sans-serif"],
+            cinzel: ["Cinzel", "serif"],
+            body: ["Outfit", "sans-serif"]
+          },
+          boxShadow: {
+            gold: "0 0 0 1px rgba(201,162,39,0.55), 0 12px 40px rgba(11,29,74,0.35)",
+            penthouse: "0 25px 80px rgba(6,18,46,0.45)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --navy: #0B1D4A;
+      --navy-deep: #06122E;
+      --red: #BF0A30;
+      --gold: #C9A227;
+      --ca: "TBA";
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Outfit, sans-serif;
+      color: #F8F6F1;
+      background:
+        radial-gradient(1200px 600px at 85% 8%, rgba(255, 214, 120, 0.45), transparent 55%),
+        radial-gradient(900px 500px at 10% 20%, rgba(255, 255, 255, 0.18), transparent 50%),
+        linear-gradient(180deg, #0d3b73 0%, #1a5fa8 14%, #3a8fd4 38%, #6eb8ea 62%, #a9d8f6 82%, #d7eefb 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,255,255,.7) 50%, transparent 51%),
+        radial-gradient(1px 1px at 28% 8%, rgba(255,255,255,.55) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 67% 12%, rgba(255,255,255,.65) 50%, transparent 51%),
+        radial-gradient(1px 1px at 82% 22%, rgba(255,255,255,.4) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 91% 6%, rgba(255,255,255,.8) 50%, transparent 51%);
+      opacity: 0.7;
+    }
+
+    .sky-wrap { position: relative; z-index: 1; }
+
+    .cloud {
+      position: absolute;
+      background: #fff;
+      border-radius: 999px;
+      filter: blur(2px);
+      opacity: 0.28;
+      pointer-events: none;
+      animation: drift 55s linear infinite;
+    }
+    .cloud::before, .cloud::after {
+      content: "";
+      position: absolute;
+      background: #fff;
+      border-radius: 999px;
+    }
+    .cloud-a { width: 220px; height: 60px; top: 120px; left: -240px; animation-duration: 62s; }
+    .cloud-a::before { width: 90px; height: 90px; top: -48px; left: 36px; }
+    .cloud-a::after { width: 120px; height: 70px; top: -30px; left: 100px; }
+    .cloud-b { width: 280px; height: 70px; top: 320px; left: -300px; opacity: 0.18; animation-duration: 80s; animation-delay: -20s; }
+    .cloud-b::before { width: 110px; height: 110px; top: -55px; left: 50px; }
+    .cloud-b::after { width: 150px; height: 80px; top: -32px; left: 120px; }
+    .cloud-c { width: 180px; height: 50px; top: 540px; left: -200px; opacity: 0.22; animation-duration: 48s; animation-delay: -35s; }
+    .cloud-c::before { width: 70px; height: 70px; top: -36px; left: 28px; }
+    .cloud-c::after { width: 96px; height: 56px; top: -22px; left: 80px; }
+
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to { transform: translateX(calc(100vw + 400px)); }
+    }
+
+    .flag-ribbon {
+      height: 10px;
+      background: repeating-linear-gradient(
+        90deg,
+        #BF0A30 0 28px,
+        #F8F6F1 28px 56px
+      );
+      box-shadow: 0 4px 18px rgba(191, 10, 48, 0.35);
+    }
+    .flag-stars-bar {
+      background:
+        radial-gradient(circle at 12px 10px, #fff 1.4px, transparent 1.7px) 0 0 / 24px 20px,
+        #002868;
+    }
+
+    .glass {
+      background: linear-gradient(180deg, rgba(11, 29, 74, 0.72), rgba(6, 18, 46, 0.78));
+      border: 1px solid rgba(232, 212, 139, 0.28);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(6, 18, 46, 0.28), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .gold-frame {
+      position: relative;
+      border: 1px solid rgba(201, 162, 39, 0.55);
+      box-shadow:
+        0 0 0 4px rgba(11, 29, 74, 0.4),
+        0 0 0 5px rgba(201, 162, 39, 0.35),
+        0 25px 70px rgba(6, 18, 46, 0.4);
+    }
+    .gold-frame::before, .gold-frame::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #C9A227;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .gold-frame::before { top: -2px; left: -2px; border-right: 0; border-bottom: 0; }
+    .gold-frame::after { bottom: -2px; right: -2px; border-left: 0; border-top: 0; }
+
+    .corner-tr, .corner-bl {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #C9A227;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .corner-tr { top: -2px; right: -2px; border-left: 0; border-bottom: 0; }
+    .corner-bl { bottom: -2px; left: -2px; border-right: 0; border-top: 0; }
+
+    .nav-glass {
+      background: linear-gradient(180deg, rgba(6, 18, 46, 0.86), rgba(11, 29, 74, 0.72));
+      border-bottom: 1px solid rgba(201, 162, 39, 0.28);
+      backdrop-filter: blur(20px);
+    }
+
+    .ticker {
+      background: linear-gradient(90deg, #06122E, #0B1D4A 20%, #BF0A30 50%, #0B1D4A 80%, #06122E);
+      overflow: hidden;
+      white-space: nowrap;
+      border-top: 1px solid rgba(201,162,39,.4);
+      border-bottom: 1px solid rgba(201,162,39,.4);
+    }
+    .ticker-track {
+      display: inline-flex;
+      animation: ticker 28s linear infinite;
+    }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .hero-overlay {
+      background:
+        linear-gradient(90deg, rgba(6,18,46,0.82) 0%, rgba(6,18,46,0.42) 42%, rgba(6,18,46,0.18) 70%, rgba(191,10,48,0.12) 100%),
+        linear-gradient(180deg, rgba(6,18,46,0.35) 0%, rgba(6,18,46,0.05) 40%, rgba(6,18,46,0.72) 100%);
+    }
+
+    .shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .shine::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.28) 48%, transparent 62%);
+      transform: translateX(-120%);
+      animation: shine 4.5s ease-in-out infinite;
+    }
+    @keyframes shine {
+      0%, 55% { transform: translateX(-120%); }
+      80%, 100% { transform: translateX(120%); }
+    }
+
+    .float-logo { animation: floaty 5.5s ease-in-out infinite; }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .star-row {
+      background-image: radial-gradient(circle, #fff 1.15px, transparent 1.35px);
+      background-size: 18px 18px;
+    }
+
+    .stripe-card {
+      background:
+        repeating-linear-gradient(
+          180deg,
+          rgba(191,10,48,0.16) 0 10px,
+          rgba(248,246,241,0.06) 10px 20px
+        ),
+        linear-gradient(180deg, rgba(11,29,74,0.88), rgba(6,18,46,0.92));
+    }
+
+    .floor-shaft {
+      width: 6px;
+      background: linear-gradient(180deg, #E8D48B, #C9A227, #8B6914);
+      box-shadow: 0 0 18px rgba(201,162,39,0.55);
+      position: relative;
+    }
+    .elevator-car {
+      position: absolute;
+      left: -7px;
+      width: 20px;
+      height: 28px;
+      background: linear-gradient(180deg, #F4E7B5, #C9A227);
+      border: 2px solid #0B1D4A;
+      border-radius: 3px;
+      animation: ride 7s ease-in-out infinite;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+    @keyframes ride {
+      0%, 100% { top: 92%; }
+      50% { top: 0%; }
+    }
+
+    .btn-buy {
+      background: linear-gradient(180deg, #E31B3D 0%, #BF0A30 52%, #8E0824 100%);
+      box-shadow: 0 10px 28px rgba(191,10,48,0.45), inset 0 1px 0 rgba(255,255,255,0.28);
+    }
+    .btn-buy:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .btn-chart {
+      background: linear-gradient(180deg, #1a3d86 0%, #0B1D4A 100%);
+      box-shadow: 0 10px 28px rgba(11,29,74,0.4), inset 0 1px 0 rgba(232,212,139,0.25);
+      border: 1px solid rgba(201,162,39,0.55);
+    }
+    .btn-chart:hover { filter: brightness(1.12); transform: translateY(-1px); }
+
+    .seal {
+      background:
+        radial-gradient(circle at 50% 50%, rgba(201,162,39,0.18), transparent 62%),
+        conic-gradient(from 0deg, #C9A227, #F4E7B5, #8B6914, #C9A227, #F4E7B5, #8B6914, #C9A227);
+    }
+
+    .section-kicker {
+      letter-spacing: 0.32em;
+    }
+
+    .copy-toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 80;
+      transition: all 0.3s ease;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .skyline {
+      height: 110px;
+      background:
+        linear-gradient(to top, #06122E 18%, transparent 100%);
+      position: relative;
+    }
+
+    iframe.chart-frame {
+      background: #0b1220;
+    }
+
+    .mobile-panel { display: none; }
+    .mobile-panel.open { display: block; }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #06122E; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(#C9A227, #BF0A30); border-radius: 10px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cloud, .ticker-track, .shine::after, .float-logo, .elevator-car { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sky-wrap">
+    <div class="cloud cloud-a" aria-hidden="true"></div>
+    <div class="cloud cloud-b" aria-hidden="true"></div>
+    <div class="cloud cloud-c" aria-hidden="true"></div>
+
+    <!-- Flag crown -->
+    <div class="flag-stars-bar h-7 flex items-center justify-center gap-3 px-4">
+      <span class="hidden sm:flex gap-2 text-white text-[10px] tracking-[0.35em] font-cinzel">★★★★★ THE TOP FLOOR PRESIDENT ★★★★★</span>
+      <span class="sm:hidden text-white text-[10px] tracking-[0.3em] font-cinzel">★★ $DJT ★★</span>
+    </div>
+    <div class="flag-ribbon"></div>
+
+    <!-- Nav -->
+    <header class="nav-glass sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[74px] flex items-center justify-between gap-4">
+        <a href="#top" class="flex items-center gap-3 min-w-0">
+          <img src="logo.png" alt="The Top Floor President logo" class="h-12 w-12 rounded-full object-cover ring-2 ring-gold shadow-gold" />
+          <div class="min-w-0">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light leading-none">OFFICIAL</p>
+            <p class="font-display text-2xl leading-none text-white tracking-wide truncate">TOP FLOOR <span class="text-flag-red">PRESIDENT</span></p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 font-cinzel text-xs tracking-[0.22em] text-gold-pale">
+          <a href="#about" class="hover:text-white transition">About</a>
+          <a href="#buy" class="hover:text-white transition">How To Buy</a>
+          <a href="#chart" class="hover:text-white transition">Chart</a>
+          <a href="#community" class="hover:text-white transition">Community</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="https://t.me/TopFloorTrump" target="_blank" rel="noopener" class="hidden sm:block hover:scale-110 transition" aria-label="Telegram">
+            <img src="tg.png" alt="Telegram" class="h-9 w-9 rounded-full ring-1 ring-white/30" />
+          </a>
+          <a href="https://x.com/TopFloorTrump" target="_blank" rel="noopener" class="hidden sm:block hover:scale-110 transition" aria-label="X / Twitter">
+            <img src="x.png" alt="X" class="h-9 w-9 rounded-full object-cover ring-1 ring-white/30" />
+          </a>
+          <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener" class="btn-buy shine inline-flex items-center rounded-md px-4 sm:px-5 py-2.5 font-display text-xl tracking-wide text-white">
+            BUY NOW
+          </a>
+          <button id="menuBtn" class="lg:hidden text-gold-light border border-gold/40 rounded-md p-2" aria-label="Open menu">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h14M4 11h14M4 16h14"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="mobile-panel lg:hidden border-t border-gold/20 bg-navy-deep/95">
+        <div class="px-5 py-4 flex flex-col gap-3 font-cinzel tracking-[0.2em] text-sm text-gold-pale">
+          <a href="#about" class="py-2">About</a>
+          <a href="#buy" class="py-2">How To Buy</a>
+          <a href="#chart" class="py-2">Chart</a>
+          <a href="#community" class="py-2">Community</a>
+          <div class="flex gap-4 pt-2">
+            <a href="https://t.me/TopFloorTrump" target="_blank" rel="noopener"><img src="tg.png" class="h-10 w-10 rounded-full" alt="Telegram" /></a>
+            <a href="https://x.com/TopFloorTrump" target="_blank" rel="noopener"><img src="x.png" class="h-10 w-10 rounded-full object-cover" alt="X" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ticker -->
+    <div class="ticker py-2 text-[11px] sm:text-xs font-cinzel tracking-[0.28em] text-gold-pale">
+      <div class="ticker-track">
+        <span class="px-6">LIVE FROM THE PENTHOUSE</span><span class="text-flag-red">✦</span>
+        <span class="px-6">$DJT</span><span class="text-white">✦</span>
+        <span class="px-6">THE TOP FLOOR PRESIDENT</span><span class="text-flag-red">✦</span>
+        <span class="px-6">PRESIDENTIAL SWAGGER</span><span class="text-white">✦</span>
+        <span class="px-6">SKYSCRAPER ENERGY</span><span class="text-flag-red">✦</span>
+        <span class="px-6">PURE SOLANA MEME CHAOS</span><span class="text-white">✦</span>
+        <span class="px-6">NOW ENTERING THE TOP FLOOR</span><span class="text-flag-red">✦</span>
+        <span class="px-6">LIVE FROM THE PENTHOUSE</span><span class="text-flag-red">✦</span>
+        <span class="px-6">$DJT</span><span class="text-white">✦</span>
+        <span class="px-6">THE TOP FLOOR PRESIDENT</span><span class="text-flag-red">✦</span>
+        <span class="px-6">PRESIDENTIAL SWAGGER</span><span class="text-white">✦</span>
+        <span class="px-6">SKYSCRAPER ENERGY</span><span class="text-flag-red">✦</span>
+        <span class="px-6">PURE SOLANA MEME CHAOS</span><span class="text-white">✦</span>
+        <span class="px-6">NOW ENTERING THE TOP FLOOR</span><span class="text-flag-red">✦</span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section id="top" class="relative">
+      <div class="relative min-h-[88vh] overflow-hidden gold-frame">
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <img src="banner.png" alt="The Top Floor President banner — flag, sky, and eagle" class="absolute inset-0 w-full h-full object-cover object-center" />
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-24 lg:py-28 grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-gold/50 bg-navy-deep/50 px-3 py-1 mb-5">
+              <span class="h-2 w-2 rounded-full bg-flag-red animate-pulse"></span>
+              <span class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">NOW ENTERING THE PENTHOUSE</span>
+            </div>
+
+            <p class="font-cinzel text-gold-light tracking-[0.45em] text-xs sm:text-sm mb-2">SOLANA MEME • $DJT</p>
+            <h1 class="font-display text-[4.2rem] sm:text-8xl lg:text-[7.2rem] leading-[0.82] text-white drop-shadow-[0_8px_24px_rgba(6,18,46,0.65)]">
+              THE TOP FLOOR<br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-flag-red via-gold-light to-white">PRESIDENT</span>
+            </h1>
+
+            <p class="mt-6 max-w-xl text-base sm:text-xl text-white/90 font-light leading-relaxed">
+              The Top Floor President Trump brings <span class="text-gold-light font-medium">presidential swagger</span>,
+              <span class="text-white font-medium">skyscraper energy</span>, and
+              <span class="text-flag-red font-semibold">pure Solana meme chaos</span>!
+            </p>
+
+            <!-- CA copy -->
+            <div class="mt-8 gold-frame rounded-lg bg-navy-deep/70 p-3 sm:p-4 max-w-xl">
+              <span class="corner-tr"></span>
+              <span class="corner-bl"></span>
+              <div class="flex items-center justify-between gap-3">
+                <div class="min-w-0">
+                  <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">AVAILABLE CONTRACT ADDRESS</p>
+                  <p id="caValue" class="font-mono text-sm sm:text-base text-white truncate">TBA</p>
+                </div>
+                <button id="copyCa" type="button" class="shrink-0 btn-chart rounded-md px-4 py-2 font-display text-lg tracking-wide text-gold-light">
+                  COPY CA
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-7 flex flex-wrap items-center gap-3">
+              <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener" class="btn-buy shine rounded-md px-8 py-3.5 font-display text-3xl tracking-wide text-white inline-flex items-center gap-2">
+                BUY NOW
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener" class="btn-chart rounded-md px-8 py-3.5 font-display text-3xl tracking-wide text-gold-light inline-flex items-center gap-2">
+                CHART
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 5-7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex justify-center lg:justify-end">
+            <div class="relative float-logo">
+              <div class="seal p-[6px] rounded-full shadow-penthouse">
+                <div class="rounded-full bg-navy-deep p-1.5">
+                  <img src="logo.png" alt="The Top Floor President — flag skyscraper portrait" class="h-56 w-56 sm:h-72 sm:w-72 lg:h-80 lg:w-80 rounded-full object-cover" />
+                </div>
+              </div>
+              <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-gold/50 bg-navy-deep/90 px-5 py-1.5 font-cinzel text-[10px] tracking-[0.3em] text-gold-light">
+                ★ COMMANDER OF THE PENTHOUSE ★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats strip -->
+    <section class="relative z-10 -mt-1">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 border border-gold/30 bg-navy-deep/80 backdrop-blur-md overflow-hidden">
+          <div class="p-5 sm:p-6 border-r border-b lg:border-b-0 border-white/10">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light">TICKER</p>
+            <p class="font-display text-4xl text-white">$DJT</p>
+          </div>
+          <div class="p-5 sm:p-6 lg:border-r border-b lg:border-b-0 border-white/10">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light">CHAIN</p>
+            <p class="font-display text-4xl text-white">SOLANA</p>
+          </div>
+          <div class="p-5 sm:p-6 border-r border-white/10">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light">RESIDENCE</p>
+            <p class="font-display text-4xl text-flag-red">PENTHOUSE</p>
+          </div>
+          <div class="p-5 sm:p-6">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light">STATUS</p>
+            <p class="font-display text-4xl text-gold-light">EXECUTIVE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <div class="absolute -inset-4 star-row opacity-30 rounded-3xl pointer-events-none" style="background-color:#002868"></div>
+          <div class="relative gold-frame rounded-2xl overflow-hidden">
+            <span class="corner-tr"></span>
+            <span class="corner-bl"></span>
+            <img src="logo.png" alt="Official portrait of The Top Floor President" class="w-full aspect-square object-cover" />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-transparent p-5">
+              <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">OFFICIAL PORTRAIT</p>
+              <p class="font-display text-3xl">THE TOP FLOOR PRESIDENT</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="section-kicker font-cinzel text-[11px] text-navy-deep font-bold">FROM THE OVAL SKYLINE</p>
+          <h2 class="font-display text-6xl sm:text-7xl text-navy-deep leading-none mt-2">
+            PENTHOUSE<br /><span class="text-flag-red">SWAGGER.</span>
+          </h2>
+          <div class="h-1.5 w-28 mt-5 mb-6 bg-gradient-to-r from-flag-red via-white to-flag-blue"></div>
+          <p class="text-navy text-lg leading-relaxed">
+            The Top Floor President Trump brings presidential swagger, skyscraper energy, and pure Solana meme chaos.
+            $DJT does not wait in the lobby. $DJT takes the private elevator, gold fixtures first, and looks down on the chart from the penthouse.
+          </p>
+          <p class="text-navy/80 text-lg leading-relaxed mt-4">
+            Flag-wrapped. Sky-backed. Eagle-approved. This is the official meme of altitude — a red, white, and blue tower with a view of the entire Solana skyline.
+          </p>
+
+          <div class="mt-8 grid sm:grid-cols-3 gap-3">
+            <div class="glass rounded-xl p-4 text-center">
+              <p class="font-display text-3xl text-gold-light">SWAG</p>
+              <p class="text-xs text-white/70 font-cinzel tracking-widest">PRESIDENTIAL</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+              <p class="font-display text-3xl text-white">HEIGHT</p>
+              <p class="text-xs text-white/70 font-cinzel tracking-widest">SKYSCRAPER</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+              <p class="font-display text-3xl text-flag-red">CHAOS</p>
+              <p class="text-xs text-white/70 font-cinzel tracking-widest">SOLANA MEME</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Buy -->
+    <section id="buy" class="relative py-8 sm:py-16">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center mb-12">
+          <p class="section-kicker font-cinzel text-[11px] text-navy-deep font-bold">FOUR FLOORS. ONE DESTINATION.</p>
+          <h2 class="font-display text-6xl sm:text-7xl text-navy-deep leading-none mt-2">HOW TO BUY <span class="text-flag-red">$DJT</span></h2>
+          <p class="mt-4 text-navy/80 max-w-2xl mx-auto">Ride the Solana elevator from the lobby to the penthouse. Four steps. No stairs. Top floor only.</p>
+        </div>
+
+        <div class="relative grid lg:grid-cols-[48px_1fr] gap-6 items-stretch">
+          <div class="hidden lg:flex justify-center">
+            <div class="floor-shaft rounded-full h-full min-h-[640px]">
+              <div class="elevator-car"></div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5">
+            <!-- 1 -->
+            <article class="stripe-card gold-frame rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+              <span class="corner-tr"></span>
+              <span class="corner-bl"></span>
+              <div class="flex items-start justify-between">
+                <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">FLOOR 01 • LOBBY</p>
+                <span class="font-display text-5xl text-white/20 leading-none">01</span>
+              </div>
+              <div class="mt-3 h-10 w-10 rounded-full bg-flag-blue flex items-center justify-center border border-gold/40">
+                <svg width="20" height="20" fill="none" stroke="#E8D48B" stroke-width="2"><rect x="4" y="9" width="12" height="9" rx="1"/><path d="M8 9V7a2 2 0 0 1 4 0v2"/></svg>
+              </div>
+              <h3 class="font-display text-4xl mt-4 text-white">GET A SOLANA WALLET</h3>
+              <p class="mt-3 text-white/80 leading-relaxed">Install Phantom or Solflare. This is your key to the building. No wallet, no penthouse.</p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <a href="https://phantom.app/" target="_blank" rel="noopener" class="text-xs font-cinzel tracking-widest border border-gold/40 text-gold-light px-3 py-2 rounded hover:bg-gold/10">PHANTOM</a>
+                <a href="https://solflare.com/" target="_blank" rel="noopener" class="text-xs font-cinzel tracking-widest border border-gold/40 text-gold-light px-3 py-2 rounded hover:bg-gold/10">SOLFLARE</a>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="stripe-card gold-frame rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+              <span class="corner-tr"></span>
+              <span class="corner-bl"></span>
+              <div class="flex items-start justify-between">
+                <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">FLOOR 02 • TREASURY</p>
+                <span class="font-display text-5xl text-white/20 leading-none">02</span>
+              </div>
+              <div class="mt-3 h-10 w-10 rounded-full bg-flag-blue flex items-center justify-center border border-gold/40">
+                <svg width="20" height="20" fill="none" stroke="#E8D48B" stroke-width="2"><circle cx="10" cy="10" r="7"/><path d="M10 6v8M7 9.5h6M7 12.5h6"/></svg>
+              </div>
+              <h3 class="font-display text-4xl mt-4 text-white">LOAD YOUR WALLET WITH SOL</h3>
+              <p class="mt-3 text-white/80 leading-relaxed">Buy SOL on any major exchange, then send it to your Solana wallet. SOL is the elevator pass.</p>
+            </article>
+
+            <!-- 3 -->
+            <article class="stripe-card gold-frame rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+              <span class="corner-tr"></span>
+              <span class="corner-bl"></span>
+              <div class="flex items-start justify-between">
+                <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">FLOOR 03 • SITUATION ROOM</p>
+                <span class="font-display text-5xl text-white/20 leading-none">03</span>
+              </div>
+              <div class="mt-3 h-10 w-10 rounded-full bg-flag-blue flex items-center justify-center border border-gold/40">
+                <svg width="20" height="20" fill="none" stroke="#E8D48B" stroke-width="2"><path d="M4 14h12l-2-8H8L4 14z"/><path d="M8 14v3M12 14v3"/></svg>
+              </div>
+              <h3 class="font-display text-4xl mt-4 text-white">OPEN THE SWAP</h3>
+              <p class="mt-3 text-white/80 leading-relaxed">Connect your wallet on Pump.fun. Paste the official $DJT contract. Always verify the CA before you sign.</p>
+              <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener" class="inline-block mt-5 text-xs font-cinzel tracking-widest border border-gold/40 text-gold-light px-3 py-2 rounded hover:bg-gold/10">OPEN PUMP.FUN SWAP</a>
+            </article>
+
+            <!-- 4 -->
+            <article class="relative rounded-2xl p-6 sm:p-8 overflow-hidden gold-frame" style="background: linear-gradient(160deg, #0B1D4A 0%, #132A63 40%, #8E0824 140%);">
+              <span class="corner-tr"></span>
+              <span class="corner-bl"></span>
+              <div class="absolute inset-0 star-row opacity-25 pointer-events-none"></div>
+              <div class="relative">
+                <div class="flex items-start justify-between">
+                  <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">FLOOR 04 • PENTHOUSE</p>
+                  <span class="font-display text-5xl text-gold/40 leading-none">04</span>
+                </div>
+                <div class="mt-3 h-10 w-10 rounded-full bg-flag-red flex items-center justify-center border border-gold/60">
+                  <svg width="20" height="20" fill="#E8D48B" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.8 5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+                </div>
+                <h3 class="font-display text-4xl mt-4 text-gold-light">SWAP SOL FOR $DJT</h3>
+                <p class="mt-3 text-white/85 leading-relaxed">Swap SOL into $DJT, confirm, and you are on the Top Floor. Presidential swagger unlocked. Welcome to the penthouse.</p>
+                <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener" class="btn-buy shine inline-flex mt-6 rounded-md px-6 py-3 font-display text-2xl tracking-wide text-white">
+                  BUY NOW — TAKE THE ELEVATOR
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chart -->
+    <section id="chart" class="relative py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+          <div>
+            <p class="section-kicker font-cinzel text-[11px] text-navy-deep font-bold">SITUATION ROOM</p>
+            <h2 class="font-display text-6xl sm:text-7xl text-navy-deep leading-none mt-2">LIVE <span class="text-flag-red">CHART</span></h2>
+          </div>
+          <a href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener" class="btn-chart self-start rounded-md px-6 py-3 font-display text-2xl tracking-wide text-gold-light">
+            OPEN DEXSCREENER
+          </a>
+        </div>
+
+        <div class="gold-frame rounded-2xl overflow-hidden bg-navy-deep">
+          <span class="corner-tr"></span>
+          <span class="corner-bl"></span>
+          <div class="flag-stars-bar px-4 py-2 flex items-center justify-between">
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-white">DEXSCREENER EMBED • $DJT / SOL</p>
+            <p class="font-cinzel text-[10px] tracking-[0.28em] text-gold-light hidden sm:block">PENTHOUSE TERMINAL</p>
+          </div>
+          <iframe
+            class="chart-frame w-full h-[420px] sm:h-[560px] lg:h-[640px]"
+            title="Dexscreener chart for $DJT"
+            src="https://dexscreener.com/solana/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
+            allow="clipboard-write"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="relative py-8 sm:py-16 pb-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center mb-10">
+          <p class="section-kicker font-cinzel text-[11px] text-navy-deep font-bold">THE PRESS CORPS IS ASSEMBLED</p>
+          <h2 class="font-display text-6xl sm:text-7xl text-navy-deep leading-none mt-2">JOIN THE <span class="text-flag-red">BRIEFING</span></h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="https://t.me/TopFloorTrump" target="_blank" rel="noopener" class="group glass gold-frame rounded-2xl p-8 flex items-center gap-6 hover:-translate-y-1 transition duration-300">
+            <span class="corner-tr"></span>
+            <span class="corner-bl"></span>
+            <img src="tg.png" alt="" class="h-20 w-20 rounded-full ring-2 ring-gold/50 group-hover:scale-105 transition" />
+            <div>
+              <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">TELEGRAM</p>
+              <p class="font-display text-4xl text-white">@TopFloorTrump</p>
+              <p class="text-white/70 mt-1">Join the penthouse briefing room.</p>
+            </div>
+          </a>
+          <a href="https://x.com/TopFloorTrump" target="_blank" rel="noopener" class="group glass gold-frame rounded-2xl p-8 flex items-center gap-6 hover:-translate-y-1 transition duration-300">
+            <span class="corner-tr"></span>
+            <span class="corner-bl"></span>
+            <img src="x.png" alt="" class="h-20 w-20 rounded-full object-cover ring-2 ring-gold/50 group-hover:scale-105 transition" />
+            <div>
+              <p class="font-cinzel text-[10px] tracking-[0.32em] text-gold-light">X / TWITTER</p>
+              <p class="font-display text-4xl text-white">@TopFloorTrump</p>
+              <p class="text-white/70 mt-1">Follow the commander of the skyline.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener" class="btn-buy shine rounded-md px-10 py-4 font-display text-3xl tracking-wide text-white">BUY NOW</a>
+          <a href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener" class="btn-chart rounded-md px-10 py-4 font-display text-3xl tracking-wide text-gold-light">CHART</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative mt-8">
+      <div class="skyline">
+        <svg class="absolute bottom-0 w-full h-[110px]" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="40" y="48" width="70" height="62" fill="#06122E"/>
+          <rect x="120" y="28" width="90" height="82" fill="#0B1D4A"/>
+          <rect x="160" y="8" width="28" height="20" fill="#C9A227"/>
+          <rect x="230" y="55" width="50" height="55" fill="#06122E"/>
+          <rect x="300" y="36" width="80" height="74" fill="#0B1D4A"/>
+          <rect x="410" y="20" width="110" height="90" fill="#06122E"/>
+          <rect x="450" y="4" width="30" height="18" fill="#BF0A30"/>
+          <rect x="560" y="44" width="60" height="66" fill="#0B1D4A"/>
+          <rect x="640" y="16" width="130" height="94" fill="#06122E"/>
+          <rect x="690" y="0" width="24" height="16" fill="#C9A227"/>
+          <rect x="790" y="38" width="70" height="72" fill="#0B1D4A"/>
+          <rect x="880" y="26" width="100" height="84" fill="#06122E"/>
+          <rect x="1000" y="50" width="55" height="60" fill="#0B1D4A"/>
+          <rect x="1070" y="18" width="120" height="92" fill="#06122E"/>
+          <rect x="1120" y="2" width="22" height="16" fill="#BF0A30"/>
+          <rect x="1210" y="40" width="80" height="70" fill="#0B1D4A"/>
+          <rect x="1310" y="30" width="90" height="80" fill="#06122E"/>
+        </svg>
+      </div>
+      <div class="bg-navy-deep">
+        <div class="flag-ribbon"></div>
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="" class="h-12 w-12 rounded-full object-cover ring-2 ring-gold" />
+            <div>
+              <p class="font-display text-2xl leading-none">THE TOP FLOOR PRESIDENT</p>
+              <p class="font-cinzel text-[10px] tracking-[0.3em] text-gold-light">$DJT • SOLANA • PENTHOUSE</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="https://t.me/TopFloorTrump" target="_blank" rel="noopener"><img src="tg.png" alt="Telegram" class="h-10 w-10 rounded-full" /></a>
+            <a href="https://x.com/TopFloorTrump" target="_blank" rel="noopener"><img src="x.png" alt="X" class="h-10 w-10 rounded-full object-cover" /></a>
+          </div>
+        </div>
+        <p class="px-5 pb-8 text-center text-white/45 text-xs max-w-3xl mx-auto leading-relaxed">
+          $DJT is a community meme coin on Solana. Not financial advice. Not affiliated with any government, political campaign, or public figure.
+          Cryptocurrency is volatile. Always verify the contract address. DYOR. NFA.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="toast" class="copy-toast glass border border-gold/50 rounded-full px-5 py-2 font-cinzel text-xs tracking-[0.22em] text-gold-light" role="status">
+    CA COPIED TO THE PENTHOUSE
+  </div>
+
+  <script>
+    const CA = "TBA";
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const toast = document.getElementById("toast");
+    const copyBtn = document.getElementById("copyCa");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+    mobileMenu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => mobileMenu.classList.remove("open"));
+    });
+
+    async function copyCa() {
+      try {
+        await navigator.clipboard.writeText(CA);
+      } catch {
+        const tmp = document.createElement("textarea");
+        tmp.value = CA;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand("copy");
+        tmp.remove();
+      }
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+    copyBtn.addEventListener("click", copyCa);
+  </script>
+</body>
+</html>
